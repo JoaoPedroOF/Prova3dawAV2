@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa123</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<script src="./JS/script.js"></script>
+
+<body onload="listaOnibus()">
+    <input type="button" value="Listar" onclick="listOnibus()">
+    <h1>Empresa123</h1>
+    <table>
+        <tr>
+            <th>MARCA</th>
+            <th>MODELO</th>
+            <th>PLACA</th>
+        </tr>
+        <tr id="ultimaLinha">
+            <td colspan="4"></td>
+        </tr>
+    </table>
+    <p id="msg"></p>
+
+    <form action="" method="" id="cadOnibus">
+        <table style="width: 400px;">
+            <tr>
+                <td>MARCA</td>
+                <td><input type="text" name="marca" id="marca"></td>
+            </tr>
+            <tr>
+                <td>MODELO</td>
+                <td><input type="text" name="modelo" id="modelo"></td>
+            </tr>
+            <tr>
+                <td>PLACA</td>
+                <td><input type="text" name="placa" id="placa"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Cadastrar" onclick="validarForm()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
